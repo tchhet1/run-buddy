@@ -10,11 +10,19 @@ body {
 
 /* Header Styles */
 header {
+    background-image: url("../images/hero-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
     padding: 20px 35px;
-    background-color: #39a6b2;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
 }
 
 header h1{
@@ -22,6 +30,7 @@ header h1{
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a{
@@ -45,6 +54,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 /* Header Styles End */
 
@@ -57,6 +67,8 @@ section {
     background-image: url("../images/hero-bg.jpeg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -76,15 +88,18 @@ section {
     font-style: italic;
     font-size: 55px;
     color: #fce138;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
 .hero-form {
     width: 40%;
     margin: 3.5%;
     color: #024e76;
-    background-color: #fce138;
+    background-color: rgba(252, 225, 56, 0.8);
     padding: 20px;
     border: 3px solid #024e76;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-form h3 {
@@ -100,6 +115,7 @@ section {
     font-size: 16px;
     color: #024e76;
     border: 1px solid #024e76;
+    border-radius: 15px;
     display: block;
     padding: 7px 15px;
     width: 100%;
@@ -116,6 +132,7 @@ section {
     font-size: 16px;
     padding: 10px 20px;
     border: none;
+    border-radius: 15px;
 }
 /* Hero Styles End */
 
@@ -297,6 +314,7 @@ section {
 
   .contact-form input, .contact-form textarea{
     border: 1px solid #024e76;
+    border-radius: 15px;
     display: block;
     padding: 7px 15px;
     font-size: 16px;
@@ -312,6 +330,7 @@ section {
       color: #024e76;
       background-color: #fce138;
       border: none;
+      border-radius: 15px;
       width: 100%;
       text-align: center;
   }
@@ -347,11 +366,13 @@ footer a {
     header {
         padding-bottom: 0;
         justify-content: center;
+        position: relative;
     }
 
     header h1 {
         width: 100%;
         text-align: center;
+        
     }
 
     header nav ul {
@@ -362,6 +383,7 @@ footer a {
 
     header nav ul li a {
         font-size: 20px;
+       
     }
 
     .hero-cta, .hero-form {
